@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Далия Каиткулова](https://up.htmlacademy.ru/adaptive/22/user/1691051).
-* Наставник: Алексей Елькин.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
