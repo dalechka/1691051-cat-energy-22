@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header ">
+    <a class="page-header__logo">
+      <img src="img/logo-mobile.svg" width="34" height="38" alt="Кэт Энерджи">
+      <img src="img/logo_2.svg" width="101" height="18" alt="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a>главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="form-title">Подбор программы</h1>
+    <p class="form-desc">Заполните анкету, и мы подберем<br>
+      программу питания для вашего кота</p>
+    <form action="https://echo.htmlacademy.ru/courses" method="form">
+      <fieldset class="about-cat">
+        <ul class="about-cat__list">
+          <li class="about-cat__item">
+            <label class="about-cat__label" for="name">ИМЯ:*</label>
+            <input class="about-cat__input" type="text" name="name" id="name" placeholder="барсик" required>  
+          </li>
+          <li class="about-cat__item">
+            <label class="about-cat__label" for="name">Вес (кг):*</label>
+            <input class="about-cat__input" type="text" name="name" id="name" placeholder="7" required>  
+          </li>
+          <li class="about-cat__item">
+            <label class="about-cat__label" for="name">Возраст (лет):</label>
+            <input class="about-cat__input" type="text" name="name" id="name" placeholder="7">  
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="goal">
+        <ul class="goal__list">
+          <li class="goal__item">
+            <input class="goal__input goal__input--checked" type="radio" name="goal" value="slim" id="slim" checked>
+            <label class="goal__label" for="slim">похудение</label>
+          </li>
+          <li class="goal__item">
+            <input class="goal__input goal__input" type="radio" name="goal" value="fit" id="fit">
+            <label class="goal__label" for="fit">Набор массы</label>
+          </li>
+          <li class="goal__item">
+            <input class="goal__input goal__input" type="radio" name="goal" value="advice" id="advice">
+            <label class="goal__label" for="advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="contacts">
+        <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label" for="email">E-mail:*</label>
+            <input class="contacts__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>  
+          </li>
+          <li class="contacts__item">
+            <label class="contacts__label" for="phone">Телефон:*</label>
+            <input class="contacts__input" type="tel" name="phone" id="phone" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>  
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="comment">
+        <legend class="comment__title">Комментарий</legend>
+        <textarea class="comment__input" type="text" name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea> 
+      </fieldset>
+      <fieldset class="extra">
+        <ul class="extra__list">
+          <li class="extra__item">
+            <input class="extra__input extra__input--checked" type="checkbox" name="sweetener" id="extra-sweetener" checked>
+            <label class="extra__label" for="extra-sweetener">сахарозаменитель</label>
+          </li>
+          <li class="extra__item">
+            <input class="extra__input" type="checkbox" name="water" id="extra-water">
+            <label class="extra__label" for="extra-water">питьевая вода</label>
+          </li>
+          <li class="extra__item">
+            <input class="extra__input" type="checkbox" name="milk" id="extra-milk">
+            <label class="extra__label" for="extra-milk">молоко</label>
+          </li>
+          <li class="extra__item">
+            <input class="extra__input" type="checkbox" name="vitamins" id="extra-vitamins">
+            <label class="extra__label" for="extra-vitamins">витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <input class="button-form" type="submit" value="отправить заявку">
+      <p class="note">* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <section class="contacts">
+      <h2 class="contacts__title">приглашаем
+        к сотрудничеству дилеров!</h2>
+      <address class="contacts__address">ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург</address>
+    </section>
+    <div class="location">
+      <img src="img/location.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+    </div>
+    <div class="page-footer__logo">
+      <a href="index.html"> 
+        <img src="img/footer-logo_2.svg" width="128" height="24" alt="Кэт Энерджи">
+      </a>
+    </div>
+    <section class="social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__button" href="#!">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#!">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#!">Фейсбук</a>
+        </li>
+      </ul> 
+    </section>
+    <div class="copyright">
+      <p>HTML Academy</p>
+    </div>
+  </footer>
+</body>
