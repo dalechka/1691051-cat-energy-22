@@ -31,7 +31,7 @@
     <h1 class="form-title">Подбор программы</h1>
     <p class="form-desc">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
-    <form action="https://echo.htmlacademy.ru/courses" method="form">
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
       <fieldset class="about-cat">
         <ul class="about-cat__list">
           <li class="about-cat__item">
@@ -39,19 +39,19 @@
             <input class="about-cat__input" type="text" name="name" id="name" placeholder="барсик" required>  
           </li>
           <li class="about-cat__item">
-            <label class="about-cat__label" for="name">Вес (кг):*</label>
-            <input class="about-cat__input" type="text" name="name" id="name" placeholder="7" required>  
+            <label class="about-cat__label" for="weight">Вес (кг):*</label>
+            <input class="about-cat__input" type="number" name="weight" id="weight" placeholder="7" required>  
           </li>
           <li class="about-cat__item">
-            <label class="about-cat__label" for="name">Возраст (лет):</label>
-            <input class="about-cat__input" type="text" name="name" id="name" placeholder="7">  
+            <label class="about-cat__label" for="age">Возраст (лет):</label>
+            <input class="about-cat__input" type="number" name="age" id="age" placeholder="7">  
           </li>
         </ul>
       </fieldset>
       <fieldset class="goal">
         <ul class="goal__list">
           <li class="goal__item">
-            <input class="goal__input goal__input--checked" type="radio" name="goal" value="slim" id="slim" checked>
+            <input class="goal__input" type="radio" name="goal" value="slim" id="slim" checked>
             <label class="goal__label" for="slim">похудение</label>
           </li>
           <li class="goal__item">
@@ -73,18 +73,18 @@
           </li>
           <li class="contacts__item">
             <label class="contacts__label" for="phone">Телефон:*</label>
-            <input class="contacts__input" type="tel" name="phone" id="phone" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>  
+            <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>  
           </li>
         </ul>
       </fieldset>
       <fieldset class="comment">
         <legend class="comment__title">Комментарий</legend>
-        <textarea class="comment__input" type="text" name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea> 
+        <textarea class="comment__input" name="comment" id="comment-field" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea> 
       </fieldset>
       <fieldset class="extra">
         <ul class="extra__list">
           <li class="extra__item">
-            <input class="extra__input extra__input--checked" type="checkbox" name="sweetener" id="extra-sweetener" checked>
+            <input class="extra__input" type="checkbox" name="sweetener" id="extra-sweetener" checked>
             <label class="extra__label" for="extra-sweetener">сахарозаменитель</label>
           </li>
           <li class="extra__item">
