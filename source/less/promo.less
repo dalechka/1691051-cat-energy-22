@@ -1,0 +1,52 @@
+.promo {
+  font-family: @oswald;
+  color: @white;
+  min-height: 480px;
+}
+
+.promo__main {
+  height: 302px;
+  position: relative;
+  background-image: linear-gradient(rgba(@basic-color, 85%), rgba(@basic-color, 85%)), url(../img/index-background-desktop_2.jpg);
+}
+
+.promo__main::after {
+  content: "";
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
+  background-image: url(../img/index-can-mobile_1.png);
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+}
+
+.promo__slogan {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 25px;
+}
+
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 73px;
+  padding-right: 74px;
+  position: absolute;
+  margin-top: 137px;
+  margin-left: 20px;
+  text-align: center;
+}
