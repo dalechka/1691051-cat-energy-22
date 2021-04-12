@@ -1,0 +1,107 @@
+.catalog-extra {
+  font-family: @oswald;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.catalog-extra__title {
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.catalog-extra__title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background-color: @basic-color;
+  border: solid @white;
+  border-width: 0 10px;
+  margin-right: -100%;
+  margin-left: 11px;
+}
+
+.catalog-extra__table {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 280px;
+  font-family: @arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.catalog-extra__table-line {
+  border-top: 1px solid @form-border-darker;
+  border-bottom: 1px solid @form-border-darker;
+}
+
+.catalog-extra__table-cell {
+  display: block;
+  padding-top: 13px;
+}
+
+.catalog-extra__table-cell--name {
+  color: @form-radio;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.catalog-extra__table-cell--pack {
+  width: 50%;
+  float: left;
+}
+
+.catalog-extra__table-cell--cost {
+  width: 50%;
+  margin-left: 140px;
+  text-align: right;
+}
+
+.catalog-extra__table-cell--button {
+  padding-bottom: 18px;
+}
+
+.catalog-extra__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-extra__gift {
+  position: relative;
+  background-image: url("../img/gift-photo-mobile.png");
+  width: 280px;
+  height: 289px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.catalog-extra__gift-desc {
+  font-family: @arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+  text-align: center;
+  padding-top: 186px;
+}
+
+.catalog-extra__gift-desc::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon_gift.svg");
+  width: 78px;
+  height: 80px;
+  top: 56px;
+  left: 102px;
+}
