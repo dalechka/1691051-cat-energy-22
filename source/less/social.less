@@ -13,6 +13,17 @@
   margin-top: 28px;
   padding-right: 77px;
   padding-left: 74px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .social__item {
