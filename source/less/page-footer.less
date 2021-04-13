@@ -1,25 +1,30 @@
+.page-footer {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 201px 400px 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 400px 149px;
+  }
+}
+
 .page-footer__logo {
   margin-top: 35px;
   margin-left: 96px;
-}
 
-.copyright {
-  position: relative;
-  font-family: @arial;
-  font-weight: 400;
-  font-size: 16px;
-  margin-left: 19px;
-  margin-top: 28px;
-  margin-bottom: 22px;
-}
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 
-.copyright::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  right: -3px;
-  width: 50px;
-  height: 53px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }

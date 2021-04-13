@@ -1,3 +1,12 @@
+.page-header {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    gap: 10px;
+    padding-right: 30px;
+  }
+}
+
 .page-header__wrap {
   width: 280px;
   display: flex;
@@ -14,6 +23,10 @@
 .page-header__logo-text {
   padding-top: 17px;
   padding-left: 56px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__toggle {
@@ -26,6 +39,10 @@
   border: none;
   margin-top: 15px;
   margin-left: 66px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__toggle:active {

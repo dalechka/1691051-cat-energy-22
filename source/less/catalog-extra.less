@@ -24,24 +24,31 @@
 
 .catalog-extra__table {
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 0 20px;
   border-collapse: collapse;
   border-spacing: 0;
-  width: 280px;
+  width: 100%;
   font-family: @arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  display: block;
+}
+
+.catalog-extra__body {
+  display: block;
 }
 
 .catalog-extra__table-line {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, max-content);
   border-top: 1px solid @form-border-darker;
   border-bottom: 1px solid @form-border-darker;
 }
 
 .catalog-extra__table-cell {
-  display: block;
+  // display: flex;
   padding-top: 13px;
 }
 
@@ -51,21 +58,25 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .catalog-extra__table-cell--pack {
-  width: 50%;
-  float: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .catalog-extra__table-cell--cost {
-  width: 50%;
-  margin-left: 140px;
+  grid-column-start: 2;
+  grid-column-end: 3;
   text-align: right;
 }
 
 .catalog-extra__table-cell--button {
-  padding-bottom: 18px;
+  padding-bottom: 17px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .catalog-extra__button {
