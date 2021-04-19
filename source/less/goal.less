@@ -3,6 +3,13 @@
   text-transform: uppercase;
   color: @form-radio;
   border-bottom: 1px solid @line;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+    border: 1px solid @form-border;
+    margin-bottom: 71px;
+  }
 }
 
 .goal__list {
@@ -11,6 +18,10 @@
   padding: 0;
   padding-left: 52px;
   padding-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 88px;
+  }
 }
 
 .goal__item {
@@ -28,6 +39,12 @@
   height: 30px;
   border: 1px solid @form-border-darker;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -75px;
+  }
 }
 
 .goal__input:checked + .goal__label::after {
@@ -39,4 +56,10 @@
   height: 13px;
   background-color: @basic-color;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: -64px;
+  }
 }

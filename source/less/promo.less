@@ -7,7 +7,9 @@
 .promo__main {
   height: 302px;
   position: relative;
-  background-image: linear-gradient(rgba(@basic-color, 85%), rgba(@basic-color, 85%)), url("../img/index-background-desktop_2.jpg");
+  background: url("../img/index-background-desktop_2.jpg") no-repeat 50%, linear-gradient();
+  // background-repeat: no-repeat;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -18,8 +20,13 @@
 .promo__main::after {
   content: "";
   position: absolute;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
   top: 167px;
-  left: 20px;
+  left: 0;
+  right: 0;
   width: 280px;
   height: 270px;
   background-image: url("../img/index-can-mobile_1.png");

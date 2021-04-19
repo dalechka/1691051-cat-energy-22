@@ -2,6 +2,11 @@
   border: none;
   font-family: @oswald;
   font-weight: 400;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .contacts__title,
@@ -12,6 +17,11 @@
   padding-top: 25px;
   padding-left: 7px;
   padding-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .contacts__title::after {
@@ -36,6 +46,12 @@
   color: @text-color;
   text-transform: uppercase;
   margin-top: 31px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
 }
 
 .contacts__item {
@@ -47,6 +63,11 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   padding-left: 7px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .contacts__label {
