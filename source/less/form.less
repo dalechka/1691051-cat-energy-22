@@ -6,6 +6,17 @@
   margin-top: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
 .note {
@@ -15,6 +26,10 @@
   text-align: center;
   margin-top: 22px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 61px;
+  }
 }
 
 .form-desc {
@@ -23,4 +38,15 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }

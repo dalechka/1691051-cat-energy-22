@@ -1,6 +1,11 @@
 .page-main {
   font-family: @oswald;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 71px;
+    padding-right: 67px;
+  }
 }
 
 .page-main__title {
@@ -11,4 +16,14 @@
   margin: 0;
   margin-top: 23px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
