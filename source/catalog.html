@@ -17,7 +17,7 @@
       <a class="page-header__logo-text">
         <img src="img/logo_2.svg" width="101" height="18" alt="">
       </a>
-      <button class="page-header__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__toggle" type="button"> <span class="visually-hidden" aria-label="Открыть меню"></span></button>
     </div>
 
     <nav class="main-nav">
@@ -201,12 +201,14 @@
           </table>
           <button class="catalog__button button">заказать</button>
         </li>
+        <li class="catalog__item">
+          <div class="catalog__more">
+            <h2 class="catalog__more-subject">Показать еще 100500 товаров</h2>
+            <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
+            <button class="catalog__more-button">показать все</button>
+          </div>
+        </li>
       </ul>
-      <div class="catalog__more">
-        <h2 class="catalog__more-subject">Показать еще 100500 товаров</h2>
-        <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__more-button">показать все</button>
-      </div>
     </section>
     <section class="catalog-extra">
       <h2 class="catalog-extra__title">Дополнительные товары</h2>
