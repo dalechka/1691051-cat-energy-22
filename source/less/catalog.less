@@ -9,7 +9,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-  }}
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
 
 .catalog__item {
   width: 320px;
@@ -20,10 +26,6 @@
   margin-top: 20px;
   padding-top: 7px;
   border-top: 1px solid @catalog-line;
-
-  @media (min-width: @tablet-width) {
-
-  }
 }
 
 .catalog__link {

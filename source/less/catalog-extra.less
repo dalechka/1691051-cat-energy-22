@@ -22,6 +22,15 @@
   margin-left: 11px;
 }
 
+.catalog-extra__grid {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr max max-content;
+    gap: 80px;
+  }
+
+}
+
 .catalog-extra__table {
   margin-top: 30px;
   padding: 0 20px;
@@ -33,10 +42,19 @@
   font-size: 14px;
   line-height: 14px;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .catalog-extra__body {
   display: block;
+
+  @media (min-width: @desktop-width) {
+    display: table-row-group;
+  }
 }
 
 .catalog-extra__table-line {
@@ -50,10 +68,21 @@
     border: 1px solid @form-border-darker;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: @desktop-width) {
+    border-top: 1px solid @form-border-darker;
+    border-bottom: 1px solid @form-border-darker;
+    border-left: transparent;
+    border-right: transparent;
+    display: table-row;  }
 }
 
 .catalog-extra__table-cell {
   padding-top: 13px;
+
+  @media (min-width: @desktop-width) {
+    display: table-cell;
+  }
 }
 
 .catalog-extra__table-cell--name {
@@ -120,6 +149,11 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 40px;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .catalog-extra__gift-desc {
