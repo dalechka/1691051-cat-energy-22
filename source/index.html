@@ -17,7 +17,7 @@
       <a class="page-header__logo-text">
         <img src="img/logo_2.svg" width="101" height="18" alt="">
       </a>
-      <button class="page-header__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__toggle" type="button"> <span class="visually-hidden" aria-label="Открыть меню"></span></button>
     </div>
 
     <nav class="main-nav">
@@ -34,7 +34,7 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main wrapper">
+  <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин питания для кошек "Кэт Энерджи"</h1>
     <section class="promo">
       <div class="promo__main">
@@ -44,7 +44,7 @@
       </div>
       <a class="button promo__button" href="form.html">подобрать программу</a>
     </section>
-    <section class="purpose">
+    <section class="purpose wrapper">
       <h2 class="visually-hidden">Ваша цель</h2>
       <ul class="purpose__list">
         <li class="purpose__item">
@@ -65,20 +65,14 @@
         </li>
       </ul>
     </section>
-    <section class="specification">
+    <section class="specification wrapper">
       <h2 class="specification__title titles">Как это работает</h2>
       <ul class="specification__list">
-        <li class="specification__item specification__item--benefit">Функциональное питание
-          содержит только полезные
-          питательные вещества.
+        <li class="specification__item specification__item--benefit">Функциональное питание содержит только полезные питательные вещества.
         </li>
-        <li class="specification__item specification__item--convenience">Выпускается в виде порошка,
-          который нужно лишь залить
-          кипятком и готово.
+        <li class="specification__item specification__item--convenience">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </li>
-        <li class="specification__item specification__item--food">Замените один-два приема
-          обычной еды на наше
-          функциональное питание.
+        <li class="specification__item specification__item--food">Замените один-два приема обычной еды на наше функциональное питание.
         </li>
         <li class="specification__item specification__item--result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
@@ -101,10 +95,10 @@
       </ul>
       <p class="example__text">Затраты на питание: 15 000 РУБ. </p>
       <ul class="example__slider-list">
-        <li class="example__slider-item">
+        <li class="example__slider-item example__slider-item--current">
           <img src="img/before-mobile.png" width="311" height="232" alt="Толстый кот, до питания Кэт Энерджи">
         </li>
-        <li class="example__slider-item example__slider-item--current">
+        <li class="example__slider-item">
           <img src="img/after-mobile.png" width="251" height="240" alt="Стройный кот, после питания Кэт Энерджи">
         </li>
       </ul>
@@ -114,7 +108,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer wrapper">
+  <footer class="page-footer">
     <section class="address">
       <h2 class="address__title">приглашаем<br>
         к сотрудничеству<br> дилеров!</h2>

@@ -17,7 +17,7 @@
       <a class="page-header__logo-text">
         <img src="img/logo_2.svg" width="101" height="18" alt="">
       </a>
-      <button class="page-header__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__toggle" type="button"> <span class="visually-hidden" aria-label="Открыть меню"></span></button>
     </div>
 
     <nav class="main-nav">
@@ -201,53 +201,57 @@
           </table>
           <button class="catalog__button button">заказать</button>
         </li>
+        <li class="catalog__item">
+          <div class="catalog__more">
+            <h2 class="catalog__more-subject">Показать еще 100500 товаров</h2>
+            <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
+            <button class="catalog__more-button">показать все</button>
+          </div>
+        </li>
       </ul>
-      <div class="catalog__more">
-        <h2 class="catalog__more-subject">Показать еще 100500 товаров</h2>
-        <p class="catalog__desc">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__more-button">показать все</button>
-      </div>
     </section>
     <section class="catalog-extra">
       <h2 class="catalog-extra__title">Дополнительные товары</h2>
-      <table class="catalog-extra__table">
-        <tbody class="catalog-extra__body">
-          <tr class="catalog-extra__table-line">
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--name">Сахарозаменитель</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 упаковка (100 г)</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">200 Р.</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
-              <button class="catalog-extra__button button">заказать</button>
-            </td>
-          </tr>
-          <tr class="catalog-extra__table-line">
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--name">питьевая вода</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">5 литров</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">50 Р.</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
-              <button class="catalog-extra__button button">заказать</button>
-            </td>
-          </tr>
-          <tr class="catalog-extra__table-line">
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--name">молоко</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 литр</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">100 Р.</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
-              <button class="catalog-extra__button button">заказать</button>
-            </td>
-          </tr>
-          <tr class="catalog-extra__table-line">
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--name">витамины</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 упаковка (30 г)</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">300 Р.</td>
-            <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
-              <button class="catalog-extra__button button">заказать</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="catalog-extra__gift">
-        <p class="catalog-extra__gift-desc">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+      <div class="catalog-extra__grid">
+        <table class="catalog-extra__table">
+          <tbody class="catalog-extra__body">
+            <tr class="catalog-extra__table-line">
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--name">Сахарозаменитель</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 упаковка (100 г)</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">200 Р.</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
+                <button class="catalog-extra__button button">заказать</button>
+              </td>
+            </tr>
+            <tr class="catalog-extra__table-line">
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--name">питьевая вода</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">5 литров</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">50 Р.</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
+                <button class="catalog-extra__button button">заказать</button>
+              </td>
+            </tr>
+            <tr class="catalog-extra__table-line">
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--name">молоко</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 литр</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">100 Р.</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
+                <button class="catalog-extra__button button">заказать</button>
+              </td>
+            </tr>
+            <tr class="catalog-extra__table-line">
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--name">витамины</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--pack">1 упаковка (30 г)</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--cost">300 Р.</td>
+              <td class="catalog-extra__table-cell catalog-extra__table-cell--button">
+                <button class="catalog-extra__button button">заказать</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="catalog-extra__gift">
+          <p class="catalog-extra__gift-desc">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>

@@ -4,6 +4,17 @@
   margin: 0 auto;
   margin-bottom: 22px;
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
 
 .catalog__item {
@@ -81,6 +92,7 @@
   border-top: 1px solid @catalog-line;
   border-bottom: 1px solid @catalog-line;
   padding-bottom: 23px;
+  display: block;
 }
 
 .catalog__more-subject {
