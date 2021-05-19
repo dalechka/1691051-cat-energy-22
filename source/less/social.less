@@ -1,3 +1,12 @@
+.social {
+  @media (max-width: @mobile-width-only) {
+    padding: 20px;
+    border-bottom: 1px solid @line;
+    border-top: 1px solid @line;
+    margin: 0 20px;
+  }
+}
+
 .social__list {
   position: relative;
   list-style: none;
@@ -5,14 +14,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  height: 63px;
-  border-bottom: 1px solid @line;
-  border-top: 1px solid @line;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 28px;
   padding-right: 77px;
   padding-left: 74px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     border: none;

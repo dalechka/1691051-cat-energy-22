@@ -28,7 +28,6 @@
     grid-template-columns: 1fr max max-content;
     gap: 80px;
   }
-
 }
 
 .catalog-extra__table {
@@ -61,20 +60,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, max-content);
-  border-top: 1px solid @form-border-darker;
-  border-bottom: 1px solid @form-border-darker;
+  border-top: 1px solid @example-background;
+  border-bottom: 1px solid @example-background;
 
   @media (min-width: @tablet-width) {
-    border: 1px solid @form-border-darker;
+    border: 1px solid @example-background;
     grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: @desktop-width) {
-    border-top: 1px solid @form-border-darker;
-    border-bottom: 1px solid @form-border-darker;
+    border-top: 1px solid @example-background;
+    border-bottom: 1px solid @example-background;
     border-left: transparent;
     border-right: transparent;
-    display: table-row;  }
+    display: table-row;
+  }
 }
 
 .catalog-extra__table-cell {

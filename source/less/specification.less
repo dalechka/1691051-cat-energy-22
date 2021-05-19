@@ -18,17 +18,20 @@
   padding-left: 80px;
 
   @media (min-width: @tablet-width) {
+    padding-left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0 20px;
     font-size: 16px;
     line-height: 24px;
+    counter-reset: section;
+    list-style-type: none;
+    column-gap: 80px;
+    row-gap: 70px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
   }
 }
 
@@ -36,6 +39,9 @@
   padding-top: 12px;
   padding-bottom: 15px;
   position: relative;
+  margin-bottom: 5px;
+  max-width: 400px;
+  z-index: 5;
 }
 
 .specification__item--benefit::before {
@@ -50,6 +56,15 @@
   background-position-y: 14px;
   background-color: @basic-color;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-position-x: 24px;
+    background-position-y: 24px;
+  }
 }
 
 .specification__item--convenience::before {
@@ -64,6 +79,15 @@
   background-position-y: 13px;
   background-color: @basic-color;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-position-x: 24px;
+    background-position-y: 24px;
+  }
 }
 
 .specification__item--food::before {
@@ -78,6 +102,15 @@
   background-position-y: 15px;
   background-color: @basic-color;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-position-x: 24px;
+    background-position-y: 24px;
+  }
 }
 
 .specification__item--result::before {
@@ -92,4 +125,36 @@
   background-position-y: 13px;
   background-color: @basic-color;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-position-x: 24px;
+    background-position-y: 24px;
+  }
+}
+
+.specification__item::after {
+  @media (min-width: @tablet-width) {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    position: absolute;
+    font-family: @oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: @purpose-background;
+    z-index: 0;
+    top: -40px;
+    left: 135px;
+  }
+}
+
+.specification__desc {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-top: 100px;
+    z-index: 5;
+  }
 }

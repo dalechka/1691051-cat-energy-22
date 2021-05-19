@@ -9,7 +9,7 @@
 
 .page-header__wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 8px;
@@ -21,7 +21,6 @@
 
 .page-header__logo-text {
   padding-top: 17px;
-  padding-left: 56px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -29,6 +28,12 @@
 }
 
 .page-header__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle--closed {
   content: "";
   background-image: url("../img/logo-burger.svg");
   background-color: inherit;
@@ -37,21 +42,14 @@
   height: 18px;
   border: none;
   margin-top: 15px;
-  margin-left: 66px;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
 
-.page-header__toggle:active {
+.page-header__toggle--opened {
   content: "";
   background-image: url("../img/logo-close.svg");
   background-repeat: no-repeat;
   background-color: inherit;
-  width: 18px;
-  height: 18px;
+  width: 20px;
   border: none;
   margin-top: 14px;
-  margin-left: 68px;
 }

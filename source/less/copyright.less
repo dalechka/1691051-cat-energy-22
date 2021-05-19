@@ -3,18 +3,25 @@
   font-family: @arial;
   font-weight: 400;
   font-size: 16px;
-  margin-left: 19px;
-  margin-top: 28px;
-  margin-bottom: 22px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 19px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
 }
 
 .copyright::after {
   content: "";
   position: absolute;
   top: -7px;
-  right: -3px;
+  margin-left: 10px;
   width: 50px;
   height: 53px;
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
+
+  @media (max-width: @mobile-width-only) {
+    top: 20px;
+    right: 20px;  }
 }

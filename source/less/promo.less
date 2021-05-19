@@ -7,8 +7,8 @@
 .promo__main {
   height: 302px;
   position: relative;
-  background: url("../img/index-background-desktop_2.jpg") no-repeat 50%, linear-gradient();
-  // background-repeat: no-repeat;
+  background: url("../img/index-background-desktop_2.jpg"), linear-gradient();
+  background-repeat: no-repeat;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -81,6 +81,7 @@
   margin-top: 137px;
   margin-left: 20px;
   text-align: center;
+  width: calc(100% - 40px);
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -92,5 +93,7 @@
     position: absolute;
     top: 200px;
     left: 94px;
+    min-width: 244px;
+    width: fit-content;
   }
 }

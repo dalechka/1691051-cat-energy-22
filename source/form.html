@@ -17,10 +17,11 @@
       <a class="page-header__logo-text">
         <img src="img/logo_2.svg" width="101" height="18" alt="">
       </a>
-      <button class="page-header__toggle" type="button"> <span class="visually-hidden" aria-label="Открыть меню"></span></button>
+      <button class="page-header__toggle page-header__toggle--opened" type="button"><span class="visually-hidden"
+          aria-label="Открыть меню"></span></button>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened  main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a href="index.html">главная</a>
@@ -34,7 +35,8 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main wrapper">
+
+  <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
     <p class="form-desc">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
@@ -74,9 +76,8 @@
         </fieldset>
       </div>
       <fieldset class="contacts">
-        <legend class="contacts__title">Контактные данные</legend>
-        <span class="contacts__annex">(владельца кота)</span>
-        <ul class="contacts__list">
+        <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+        <ul class="contacts__list wrapper">
           <li class="contacts__item">
             <label class="contacts__label contacts__label--email" for="email">E-mail:*</label>
             <input class="contacts__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
@@ -90,12 +91,14 @@
       </fieldset>
       <fieldset class="comment">
         <legend class="comment__title">Комментарий</legend>
-        <textarea class="comment__input" name="comment" id="comment-field" cols="40" rows="8"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="comment__wrap wrapper">
+          <textarea class="comment__input" name="comment" id="comment-field" cols="40" rows="8"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
       <fieldset class="extra">
         <legend class="extra__title">Дополнительно</legend>
-        <ul class="extra__list">
+        <ul class="extra__list wrapper">
           <li class="extra__item">
             <input class="extra__input visually-hidden" type="checkbox" name="sweetener" id="extra-sweetener" checked>
             <label class="extra__label" for="extra-sweetener">сахарозаменитель</label>
@@ -114,7 +117,7 @@
           </li>
         </ul>
       </fieldset>
-      <div class="extra__button-note">
+      <div class="button-note">
         <input class="button button-form" type="submit" value="отправить заявку">
         <p class="note">* — Обязательные поля</p>
       </div>
@@ -124,9 +127,7 @@
     <section class="address">
       <h2 class="address__title">приглашаем<br>
         к сотрудничеству<br> дилеров!</h2>
-      <address class="address__address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</address>
+      <address class="address__address">ул. Большая <br>Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
     </section>
     <div class="location">
       <img src="img/location.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
